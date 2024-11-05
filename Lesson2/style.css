@@ -1,0 +1,94 @@
+* {
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {}
+
+.container .header {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(236, 236, 236);
+    align-content: center;
+}
+
+.container .header ul {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.container .header ul li button {
+    padding: 15px 50px;
+    background-color: rgb(46, 250, 138);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.container .header ul li button:hover {
+    background-color: #0449aa;
+}
+
+.container .header ul li button a {
+    color: rgb(255, 255, 255);
+}
+
+.container .main {
+    display: flex;
+    margin: 10px;
+}
+
+.container .main .side-bar {
+    width: 25%;
+    display: grid;
+    justify-content: space-around;
+    background-color: rgb(127, 195, 255);
+    margin-right: 10px;
+}
+
+.container .main .content {
+    width: 75%;
+}
+
+.container .main .side-bar .image {
+    width: 200px;
+    height: 85px;
+    margin: 40px;
+}
+
+.container .main .side-bar .about {
+    margin: 0px 30px;
+}
+
+.container .main .side-bar .about h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.container .main .content {
+    display: grid;
+}
+
+.container .main .content .display {
+    height: 560px;
+    background-color: rgb(215, 215, 215);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.container .main .content .address {
+    height: 65px;
+    background-color: rgb(127, 195, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    text-decoration: line-through;
+}

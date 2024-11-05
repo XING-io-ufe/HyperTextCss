@@ -1,0 +1,13 @@
+table,
+th,
+td {
+    border: 4px solid greenyellow;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+* {
+    background-color: black;
+    color: white;
+    font-size: 25px;
+}
