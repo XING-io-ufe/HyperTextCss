@@ -26,15 +26,13 @@
     border: none;
     border-radius: 25px;
     cursor: pointer;
+    color: rgb(255, 255, 255);
 }
 
 .container .header ul li button:hover {
     background-color: #0449aa;
 }
 
-.container .header ul li button a {
-    color: rgb(255, 255, 255);
-}
 
 .container .main {
     display: flex;
@@ -56,7 +54,7 @@
 .container .main .side-bar .image {
     width: 200px;
     height: 85px;
-    margin: 40px;
+    margin: 40px 85px;
 }
 
 .container .main .side-bar .about {
@@ -66,6 +64,15 @@
 .container .main .side-bar .about h3 {
     display: flex;
     justify-content: center;
+    margin-top: 60px;
+}
+
+.container .main .side-bar .about p {
+    padding: 5px;
+}
+
+.container .main .side-bar .about p span {
+    text-decoration: underline;
 }
 
 .container .main .content {
@@ -87,8 +94,4 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-p {
-    text-decoration: line-through;
 }
