@@ -17,6 +17,7 @@
   background-position: center;
   background-size: cover;
 }
+
 .container .box {
   display: flex;
   justify-content: center;
@@ -25,6 +26,7 @@
   height: 7in;
   background-color: white;
 }
+
 .container .box .left {
   width: 50%;
   height: 100%;
@@ -33,24 +35,30 @@
   background-position: center;
   background-size: cover;
 }
+
 .container .box .left .header {
   margin-top: 200px;
   text-align: center;
 }
+
 .container .box .left .header h1 {
   color: rgb(155, 155, 155);
 }
+
 .container .box .left .text {
   margin: 15px;
   text-align: center;
 }
+
 .container .box .left .text p {
   color: rgb(255, 255, 255);
 }
+
 .container .box .left .question {
   margin: 25px;
   text-align: center;
 }
+
 .container .box .left .question p {
   color: azure;
 }
@@ -58,6 +66,7 @@
 .container .box .left .sign {
   text-align: center;
 }
+
 .container .box .left .sign button {
   padding: 10px 40px;
   border-radius: 10px;
@@ -65,6 +74,7 @@
   border: 1px solid white;
   cursor: pointer;
 }
+
 .container .box .left .sign button a {
   text-decoration: none;
   color: white;
@@ -75,26 +85,32 @@
   transition: 1s;
   border: none;
 }
+
 .container .box .right {
   width: 50%;
 }
+
 .container .box .right .content {
   width: 100%;
 }
+
 .container .box .right .content form {
   margin: 100px 45px;
 }
+
 .container .box .right .content form .section {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .container .box .right .content form .section .lab label {
   color: gray;
   padding: 5px;
 }
+
 .container .box .right .content form .section .lab input {
-  width: 200px;
+  width: 250px;
   height: 50px;
   border: 1px solid #9b9b9b;
   margin: 10px 0px;
@@ -103,24 +119,29 @@
 .container .box .right .content form .main .space {
   margin: 10px 0px;
 }
+
 .container .box .right .content form .main .space label {
   color: gray;
   padding: 5px;
 }
+
 .container .box .right .content form .main .space input {
-  width: 400px;
+  width: 520px;
   height: 50px;
   border: 1px solid #9b9b9b;
   margin: 10px 0px;
 }
+
 .container .box .right .content form .sub {
   text-align: center;
   margin: 30px 0px;
 }
+
 .container .box .right .content form .sub input[type="submit"] {
-  padding: 15px 150px;
+  padding: 15px 200px;
   background-color: green;
   border: none;
   border-radius: 5px;
   color: white;
+  cursor: pointer;
 }

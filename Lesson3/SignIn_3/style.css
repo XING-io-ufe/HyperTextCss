@@ -11,24 +11,29 @@
   justify-content: center;
   align-items: center;
 }
+
 .container .left {
   width: 55%;
   background-color: rgb(111, 204, 173);
   height: 7.6in;
 }
+
 .container .left .image {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 50px;
 }
+
 .container .left .image img {
   width: 350px;
 }
+
 .container .left .header {
   margin-top: 30px;
   text-align: center;
 }
+
 .container .left .header h2 {
   color: white;
 }
@@ -37,27 +42,33 @@
   text-align: center;
   margin-top: 10px;
 }
+
 .container .left .text p {
   color: white;
 }
+
 .container .left .shape {
   display: flex;
   justify-content: center;
   margin-top: 75px;
 }
+
 .container .left .shape hr {
   margin: 5px;
 }
+
 .container .left .shape hr.rounded {
   width: 12px;
   border: 5px solid white;
   border-radius: 25px;
 }
+
 .container .left .shape hr.dotted {
   width: 2px;
   border: 5px solid white;
   border-radius: 25px;
 }
+
 .container .right {
   width: 45%;
   background-color: rgb(255, 255, 255);
@@ -69,22 +80,28 @@
   color: gray;
   text-align: center;
 }
+
 .container .right .about {
   margin: 70px;
   text-align: center;
 }
+
 .container .right .about h3 {
   color: gray;
 }
+
 .container .right .content {
   width: 100%;
 }
+
 .container .right .content form {
-  margin: 50px;
+  margin: 0px 150px;
 }
+
 .container .right .content form label {
   color: rgb(99, 99, 99);
 }
+
 .container .right .content form input[type="email"],
 input[type="Password"] {
   border: none;
@@ -92,20 +109,24 @@ input[type="Password"] {
   height: 40px;
   margin: 5px 0px;
 }
+
 .container .right .content form .forgot {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
+
 .container .right .content form .forgot a {
   text-decoration: none;
   color: green;
 }
+
 .container .right .content form .sub {
   display: flex;
   justify-content: center;
   margin: 25px;
 }
+
 .container .right .content form input[type="submit"] {
   width: 200px;
   height: 40px;
@@ -115,23 +136,28 @@ input[type="Password"] {
   color: white;
   cursor: pointer;
 }
+
 .container .right .and {
   text-align: center;
   margin: 40px;
 }
+
 .container .right .account {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .container .right .account i {
   font-size: 25px;
   padding: 5px;
 }
+
 .container .right .create {
   margin: 50px;
   text-align: center;
 }
+
 .container .right .create p a {
   color: green;
   text-decoration: underline;
