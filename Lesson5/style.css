@@ -1,0 +1,60 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header h1 {
+  color: rgba(0, 0, 0, 0.822);
+}
+
+table,
+th,
+td {
+  border: 2px solid #00b8ff;
+  text-align: center;
+  border-collapse: collapse;
+  height: 40px;
+}
+td {
+  height: 1in;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .left {
+  width: 50%;
+}
+main .right {
+  width: 50%;
+  margin: 30px;
+}
+
+main .left form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1in;
+}
+main .left form input {
+  width: 400px;
+  height: 30px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 3px solid #00b8ff;
+  border-radius: 5px;
+  color: grey;
+  font-size: large;
+  font-weight: 600;
+}
+main .left form input[type="submit"] {
+  width: 200px;
+  height: 60px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 3px solid #00b8ff;
+  border-radius: 5px;
+  color: black;
+  cursor: pointer;
+}
