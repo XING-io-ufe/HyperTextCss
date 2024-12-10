@@ -15,16 +15,16 @@
     </header>
     <main>
         <div class="left">
-            <form id="form">
-
+            <form id="form" onsubmit="myFunction(); return false;" required>
                 <input type="text" id="lastName" name="lastName" placeholder="Овог..." required>
                 <input type="text" id="firstName" name="firstName" placeholder="Нэр..." required>
-                <input type="text" id="age" name="age" placeholder="Нас...">
+                <input type="text" id="age" name="age" placeholder="Нас..." required>
                 <input type="submit" value="Бүртгэх">
+
             </form>
         </div>
         <div class="right">
-            <table style="width:100%">
+            <table style="width:100%" id="myTable">
                 <tr>
                     <th style="width: 5%;">№</th>
                     <th style="width: 20%;">Овог</th>
@@ -36,8 +36,7 @@
         </div>
     </main>
 
-
-    <script src="./script.js"></script>
+    <script src="./example.js"></script>
 </body>
 
 </html>

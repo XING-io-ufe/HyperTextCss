@@ -1,12 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title></head
-  >// //
+<html>
 
-  <body>
-    <style></style>
-  </body>
+<head>
+  <title>Read File</title>
+  <script>
+    function readFileB() {
+      // (A) GET SELECTED FILE
+      let selected = document.getElementById("demoPickB").files[0];
+
+      // (B) READ SELECTED FILE
+      let reader = new FileReader();
+      reader.addEventListener("load", () => {
+        let imgTag = document.getElementById("demoShowB");
+        imgTag.src = reader.result;
+      });
+      reader.readAsDataURL(selected);
+    }
+  </script>
+</head>
+
+<body>
+  <input type="file" value="Choose Image File" id="demoPickB" accept="image/*" onchange="readFileB()">
+  <img id="demoShowB">
+  <h3></h3>
+</body>
+
 </html>

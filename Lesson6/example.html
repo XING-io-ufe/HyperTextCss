@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Javascript Excel</title>
-
-    <!-- (X) NOT IMPORTANT -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Excel Viewer</title>
     <style>
         * {
-            font-family: arial, sans-serif;
+            font-family: Arial, sans-serif;
         }
 
         table {
             border-collapse: collapse;
+            width: 100%;
         }
 
         table tr:nth-child(odd) {
@@ -20,21 +21,16 @@
 
         table td {
             padding: 10px;
+            border: 1px solid #ddd;
         }
     </style>
-
-    <!-- (A) JAVASCRIPT -->
-    <!-- https://sheetjs.com/ -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
     <script defer src="./3-excel-table.js"></script>
 </head>
 
 <body>
-    <!-- (B) FILE PICKER -->
-    <input type="file" id="demoA" accept=".xls,.xlsx">
-
-    <!-- (C) EMPTY TABLE -->
-    <table id="demoB"></table>
+    <input type="file" id="fileInput" accept=".xls,.xlsx">
+    <table id="dataTable"></table>
 </body>
 
 </html>

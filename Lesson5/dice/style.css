@@ -1,0 +1,93 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .dice-animal .knucklebone img {
+    /*  width: 400px */
+    height: 100px;
+}
+
+.container .dice-animal .knucklebone .dice {
+    display: flex;
+    justify-content: flex-start;
+    width: 500px;
+    position: absolute;
+}
+
+.container .op {
+    margin-left: 13in;
+    position: absolute;
+}
+
+.container .dice-animal .knucklebone .dice {
+    /* display: none; */
+}
+
+.container .dice-animal .knucklebone {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.container .dice-animal .knucklebone .btn button {
+    padding: 10px 40px;
+    background-color: rgb(255, 208, 0);
+    border: 5px solid #bfff00;
+    border-radius: 20px;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0px 30px;
+    cursor: pointer;
+}
+
+.container .content {
+    margin-top: 2in;
+}
+
+.container .dice-animal .content .line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4in;
+}
+
+.container .dice-animal .content .player-1 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.container .dice-animal .content .player-2 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.container .dice-animal .content .player-1 h2 {
+    margin: 0px 60px;
+}
+
+.container .dice-animal .content .player-2 h2 {
+    margin: 0px 60px;
+}
+
+
+
+
+.player-1 img,
+.player-2 img {
+    position: relative;
+
+}
+
+.player-1 img {
+    left: 50px;
+    /* Position for Player 1 */
+}
+
+.player-2 img {
+    left: 50px;
+    /* Position for Player 2 */
+}

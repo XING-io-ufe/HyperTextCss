@@ -1,29 +1,46 @@
-document.getElementById("demoA").onchange = evt => {
-    // (A) NEW FILE READER
-    var reader = new FileReader();
+// Function to handle file input change
+document.getElementById('fileInput').addEventListener('change', handleFile);
 
-    // (B) ON FINISH LOADING
-    reader.addEventListener("loadend", evt => {
-        // (B1) GET HTML TABLE
-        var table = document.getElementById("demoB");
-        table.innerHTML = "";
+function handleFile(event) {
+    const file = event.target.files[0]; // Get the uploaded file
+    if (!file) {
+        return; // Exit if no file is selected
+    }
 
-        // (B2) GET THE FIRST WORKSHEET
-        var workbook = XLSX.read(evt.target.result, { type: "binary" }),
-            worksheet = workbook.Sheets[workbook.SheetNames[0]],
-            range = XLSX.utils.decode_range(worksheet["!ref"]);
+    const reader = new FileReader(); // Create a FileReader object
 
-        // (B3) READ EXCEL CELLS & INSERT ROWS/COLUMNS
-        for (let row = range.s.r; row <= range.e.r; row++) {
-            let r = table.insertRow();
-            for (let col = range.s.c; col <= range.e.c; col++) {
-                let c = r.insertCell(),
-                    xcell = worksheet[XLSX.utils.encode_cell({ r: row, c: col })];
-                c.innerHTML = xcell.v;
-            }
+    // Define what happens when the file is read
+    reader.onload = function (e) {
+        const data = new Uint8Array(e.target.result); // Read the file as an array
+        const workbook = XLSX.read(data, { type: 'array' }); // Parse the Excel file
+
+        // Get the first sheet name
+        const firstSheetName = workbook.SheetNames[0];
+        const worksheet = workbook.Sheets[firstSheetName]; // Get the first sheet
+
+        // Convert the sheet to JSON format
+        const jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1 }); // Use header: 1 to get an array of arrays
+
+        // Render the data in the table
+        renderTable(jsonData);
+    };
+
+    reader.readAsArrayBuffer(file); // Read the file as an ArrayBuffer
+}
+
+// Function to render the table
+function renderTable(data) {
+    const table = document.getElementById('dataTable');
+    table.innerHTML = ''; // Clear any existing content
+
+    // Loop through the data and create table rows and cells
+    for (let i = 0; i < data.length; i++) {
+        const row = document.createElement('tr'); // Create a new row
+        for (let j = 0; j < data[i].length; j++) {
+            const cell = document.createElement('td'); // Create a new cell
+            cell.textContent = data[i][j]; // Set the cell's text
+            row.appendChild(cell); // Append the cell to the row
         }
-    });
-
-    // (C) START - READ SELECTED EXCEL FILE
-    reader.readAsArrayBuffer(evt.target.files[0]);
-};
+        table.appendChild(row); // Append the row to the table
+    }
+}
