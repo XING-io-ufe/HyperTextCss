@@ -7,11 +7,14 @@
     scrollbar-width: none;
 }
 
+
+/* ---------------HEADER------------- */
 header {
     position: fixed;
     width: 100%;
     height: 80px;
     background-color: #1B1833;
+    z-index: 100;
 }
 
 header nav {
@@ -60,6 +63,7 @@ header nav .register .active {
     width: 100%;
 }
 
+/* ---------------BANNER--------------------- */
 .container .banner {
     background: rgb(242, 159, 88);
     background: linear-gradient(90deg, rgba(242, 159, 88, 1) 0%, rgba(171, 68, 89, 1) 50%, rgba(68, 23, 82, 1) 100%);
@@ -68,13 +72,6 @@ header nav .register .active {
     align-items: center;
 }
 
-.container .second {
-    background: rgb(242, 159, 88);
-    background: linear-gradient(90deg, rgb(139, 242, 88) 0%, rgb(70, 171, 68) 50%, rgb(82, 23, 65) 100%);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .container .banner .left-banner {
     width: 50%;
@@ -111,4 +108,100 @@ header nav .register .active {
 
 .container .banner .right-banner {
     width: 50%;
+}
+
+
+
+/* ---------------------CONTACT---------------------- */
+/* .contact .contact-header {}  */
+/* hooson tag*/
+
+.contact {
+    height: 2.5in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .contact-header p {
+    padding: 20px 30px;
+    color: #441752;
+    font-size: 25px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.contact .contact-img {
+    display: flex;
+    justify-content: space-center;
+    align-items: center;
+}
+
+.contact .contact-img h2 {
+    color: #1B1833;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.contact .contact-img h2 span {
+    color: blue;
+}
+
+.contact .contact-img img {
+    position: absolute;
+    right: 2in;
+    width: 150px;
+
+}
+
+
+
+/* ----------------MAPS------------------- */
+.maps {
+    height: 5in;
+    background-color: #AB4459;
+}
+
+.maps .maps-head {
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.maps .maps-head h2 {
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+
+}
+
+.maps .maps-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+/* --------FOOTER---------- */
+footer {
+    height: 1in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1B1833;
+}
+
+footer .footer-text {
+    text-align: center;
+}
+
+footer .footer-text p {
+    color: #ffffff;
+    font-size: large;
+    font-weight: 700;
 }
