@@ -1,0 +1,107 @@
+body {
+  background-color: hsl(230.36deg 56% 19.61%);
+}
+
+/* -------------CONTACT LEFT SIDE-------------- */
+.contact-form {
+  height: auto;
+  padding-top: 2in;
+  display: flex;
+  margin-bottom: 1in;
+  justify-content: center;
+}
+.contact-form .contact-left {
+  width: 50%;
+}
+/* .contact-form .contact-left form {
+} */
+.contact-form .contact-left form h2 {
+  color: #ff0040;
+  font-size: 35px;
+}
+.contact-form .contact-left form p {
+  color: #ffffff;
+  font-size: 20px;
+  padding-top: 5px;
+  padding-bottom: 25px;
+}
+.contact-form .contact-left form span {
+  display: flex;
+}
+.contact-form .contact-left form span input {
+  width: 100%;
+  height: 50px;
+  border: none;
+  background-color: dimgray;
+  color: white;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+  font-size: 18px;
+}
+.contact-form .contact-left form span input::placeholder {
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+}
+.contact-form .contact-left form textarea {
+  width: 100%;
+  height: 3in;
+  border: none;
+  border-radius: 10px;
+  background-color: dimgray;
+  margin: 5px;
+  font-size: 18px;
+}
+.contact-form .contact-left form textarea::placeholder {
+  color: #fff;
+  font-size: 18px;
+  padding: 10px;
+}
+.contact-form .contact-left form input[type="submit"] {
+  width: 150px;
+  height: 40px;
+  border: none;
+  background-color: #ff0040;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+/* -----------------CONTACT RIGHT SIDE------------- */
+.contact-form .contact-right {
+  width: 40%;
+}
+.contact-form .contact-right .contact-info {
+  margin: 0in 1.5in;
+}
+.contact-form .contact-right .contact-info .contact-head {
+  margin-bottom: 50px;
+}
+.contact-form .contact-right .contact-info .contact-head h2 {
+  margin: 20px 0px;
+  color: #ff0040;
+  font-size: 35px;
+}
+.contact-form .contact-right .contact-info .contact-head p {
+  margin: 20px 0px;
+  color: #fff;
+  font-size: 20px;
+}
+.contact-form .contact-right .contact-info .contact-last h2 {
+  margin: 10px 0px;
+  color: #ff0040;
+  font-size: 35px;
+}
+.contact-form .contact-right .contact-info .contact-last .contact-link {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.contact-form .contact-right .contact-info .contact-last .contact-link a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}

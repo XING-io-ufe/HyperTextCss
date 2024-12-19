@@ -1,0 +1,27 @@
+.gallery {
+  height: auto;
+  padding-top: 1.5in;
+  background-color: rgb(16, 161, 206);
+}
+.gallery .gallery-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.gallery .gallery-title h2 {
+  color: #fff;
+  font-size: 35px;
+}
+.gallery .gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.gallery .gallery-list .gallery-items {
+  margin: 10px;
+}
+.gallery .gallery-list .gallery-items img {
+  width: 500px;
+}
