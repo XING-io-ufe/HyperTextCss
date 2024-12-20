@@ -11,6 +11,7 @@
   --text-gray: #bababa;
   --input: #696969;
 }
+
 /* --------------ROOT------------------- */
 
 * {
@@ -36,6 +37,7 @@ header nav {
   justify-content: space-between;
   align-items: center;
 }
+
 header nav .menu {
   display: none;
 }
@@ -62,6 +64,12 @@ header nav ul a:hover {
   transition: 0.3s;
 }
 
+header nav .register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 header nav .register a {
   color: var(--text-color-white);
   font-size: larger;
@@ -76,6 +84,7 @@ header nav .register .active {
   border-radius: 25px;
   background-color: var(--color5);
 }
+
 header nav .register .active:hover {
   background-color: var(--main);
   transition: 0.5s;
@@ -87,18 +96,16 @@ header nav .register .active:hover {
 
 /* ---------------BANNER--------------------- */
 .container .banner {
-  background-image: linear-gradient(
-    to right,
-    #505285 0%,
-    #585e92 12%,
-    #65689f 25%,
-    #7474b0 37%,
-    #7e7ebb 50%,
-    #8389c7 62%,
-    #9795d4 75%,
-    #a2a1dc 87%,
-    #b5aee4 100%
-  );
+  background-image: linear-gradient(to right,
+      #505285 0%,
+      #585e92 12%,
+      #65689f 25%,
+      #7474b0 37%,
+      #7e7ebb 50%,
+      #8389c7 62%,
+      #9795d4 75%,
+      #a2a1dc 87%,
+      #b5aee4 100%);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -138,6 +145,7 @@ header nav .register .active:hover {
   font-weight: 700;
   text-transform: uppercase;
 }
+
 .container .banner .left-banner .link a:hover {
   color: var(--hover);
   background-color: var(--main);
@@ -163,14 +171,17 @@ header nav .register .active:hover {
   justify-items: center;
   align-items: center;
 }
+
 .view .view-item i {
   font-size: 45px;
 }
+
 .view .view-item h2 {
   font-size: 30px;
   color: var(--text-color-white);
   padding: 15px 0px;
 }
+
 .view .view-item p {
   font-size: 15px;
   color: var(--text-color-white);
@@ -182,45 +193,55 @@ header nav .register .active:hover {
   height: auto;
   background-color: var(--color5);
 }
+
 .card .card-title {
   padding: 25px;
   text-align: center;
 }
+
 .card .card-title h2 {
   color: var(--text-color-white);
   font-size: 40px;
   font-weight: 700;
 }
+
 .card .card-title h2 i {
   padding: 0px 15px;
   font-weight: bold;
 }
+
 .card .card-list {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
+
 .card .card-list .card-items {
   text-align: center;
   margin: 15px;
   padding: 30px 60px;
   flex-basis: 25%;
 }
+
 .card .card-list .card-items.active {
   border-top: 5px solid var(--color4);
 }
+
 .card .card-list .card-items img {
   width: 150px;
 }
+
 .card .card-list .card-items .card-details {
   padding: 30px 80px;
 }
+
 .card .card-list .card-items .card-details h3 {
   color: var(--hover);
   font-size: 25px;
   font-weight: 900;
 }
+
 .card .card-list .card-items .card-details p {
   color: var(--text-color-white);
   font-size: 20px;
@@ -232,26 +253,31 @@ header nav .register .active:hover {
 .content {
   height: auto;
 }
+
 .content .content-title {
   margin: 30px;
 }
+
 .content .content-title h2 {
   color: var(--main);
   font-size: 30px;
   font-weight: 800;
 }
+
 .content .content-info {
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin-bottom: 40px;
 }
+
 .content .content-info p {
   color: var(--color6);
   width: 50%;
   line-height: 30px;
   font-size: 20px;
 }
+
 .content .content-info img {
   width: 250px;
 }
