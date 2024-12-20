@@ -1,11 +1,26 @@
+/* --------------ROOT------------------- */
+:root {
+  --bg-white: #fff;
+  --main: #0e1b48;
+  --hover: #c18db4;
+  --link: #e2cad8;
+  --color4: #87a7d0;
+  --color5: #27425d;
+  --color6: #0e1f2f;
+  --text-color-white: #fff;
+  --text-gray: #bababa;
+  --input: #696969;
+}
+/* --------------ROOT------------------- */
+
 body {
-  background-color: hsl(230.36deg 56% 19.61%);
+  background-color: var(--color6);
 }
 
 /* -------------CONTACT LEFT SIDE-------------- */
 .contact-form {
   height: auto;
-  padding-top: 2in;
+  padding-top: 1in;
   display: flex;
   margin-bottom: 1in;
   justify-content: center;
@@ -16,11 +31,11 @@ body {
 /* .contact-form .contact-left form {
 } */
 .contact-form .contact-left form h2 {
-  color: #ff0040;
+  color: var(--hover);
   font-size: 35px;
 }
 .contact-form .contact-left form p {
-  color: #ffffff;
+  color: var(--text-color-white);
   font-size: 20px;
   padding-top: 5px;
   padding-bottom: 25px;
@@ -32,15 +47,15 @@ body {
   width: 100%;
   height: 50px;
   border: none;
-  background-color: dimgray;
-  color: white;
+  background-color: var(--input);
+  color: var(--text-color-white);
   border-radius: 10px;
   padding: 5px;
   margin: 5px;
   font-size: 18px;
 }
 .contact-form .contact-left form span input::placeholder {
-  color: white;
+  color: var(--text-color-white);
   font-size: 18px;
   padding: 10px;
 }
@@ -49,12 +64,12 @@ body {
   height: 3in;
   border: none;
   border-radius: 10px;
-  background-color: dimgray;
+  background-color: var(--input);
   margin: 5px;
   font-size: 18px;
 }
 .contact-form .contact-left form textarea::placeholder {
-  color: #fff;
+  color: var(--text-color-white);
   font-size: 18px;
   padding: 10px;
 }
@@ -62,9 +77,9 @@ body {
   width: 150px;
   height: 40px;
   border: none;
-  background-color: #ff0040;
+  background-color: var(--hover);
   border-radius: 10px;
-  color: #fff;
+  color: var(--text-color-white);
   cursor: pointer;
   font-size: 20px;
   font-weight: bold;
@@ -81,17 +96,17 @@ body {
 }
 .contact-form .contact-right .contact-info .contact-head h2 {
   margin: 20px 0px;
-  color: #ff0040;
+  color: var(--hover);
   font-size: 35px;
 }
 .contact-form .contact-right .contact-info .contact-head p {
   margin: 20px 0px;
-  color: #fff;
+  color: var(--text-color-white);
   font-size: 20px;
 }
 .contact-form .contact-right .contact-info .contact-last h2 {
   margin: 10px 0px;
-  color: #ff0040;
+  color: var(--hover);
   font-size: 35px;
 }
 .contact-form .contact-right .contact-info .contact-last .contact-link {
@@ -101,7 +116,70 @@ body {
 }
 .contact-form .contact-right .contact-info .contact-last .contact-link a {
   text-decoration: none;
-  color: white;
+  color: var(--text-color-white);
   font-size: 20px;
   cursor: pointer;
+}
+/* ---------------------CONTACT---------------------- */
+
+.contact {
+  height: 2.5in;
+  background-color: var(--text-color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact .contact-header p {
+  padding: 20px 30px;
+  color: var(--color6);
+  font-size: 25px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.contact .contact-img {
+  display: flex;
+  justify-content: space-center;
+  align-items: center;
+}
+
+.contact .contact-img h2 {
+  color: var(--main);
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.contact .contact-img h2 span {
+  color: var(--color4);
+}
+
+.contact .contact-img img {
+  position: absolute;
+  right: 2in;
+  width: 150px;
+}
+
+/* ----------------MAPS------------------- */
+.maps {
+  height: 5in;
+  background-color: var(--color6);
+  margin-bottom: 40px;
+}
+
+.maps .maps-head {
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.maps .maps-head h2 {
+  color: var(--text-color-white);
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.maps .maps-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

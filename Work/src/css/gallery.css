@@ -1,7 +1,22 @@
+/* --------------ROOT------------------- */
+:root {
+  --bg-white: #fff;
+  --main: #0e1b48;
+  --hover: #c18db4;
+  --link: #e2cad8;
+  --color4: #87a7d0;
+  --color5: #27425d;
+  --color6: #0e1f2f;
+  --text-color-white: #fff;
+  --text-gray: #bababa;
+  --input: #696969;
+}
+/* --------------ROOT------------------- */
+
 .gallery {
   height: auto;
   padding-top: 1.5in;
-  background-color: rgb(16, 161, 206);
+  background-color: var(--color5);
 }
 .gallery .gallery-title {
   display: flex;
@@ -10,7 +25,7 @@
   margin-bottom: 50px;
 }
 .gallery .gallery-title h2 {
-  color: #fff;
+  color: var(--text-color-white);
   font-size: 35px;
 }
 .gallery .gallery-list {
@@ -23,5 +38,5 @@
   margin: 10px;
 }
 .gallery .gallery-list .gallery-items img {
-  width: 500px;
+  width: 450px;
 }

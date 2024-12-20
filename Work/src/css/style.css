@@ -1,3 +1,18 @@
+/* --------------ROOT------------------- */
+:root {
+  --bg-white: #fff;
+  --main: #0e1b48;
+  --hover: #c18db4;
+  --link: #e2cad8;
+  --color4: #87a7d0;
+  --color5: #27425d;
+  --color6: #0e1f2f;
+  --text-color-white: #fff;
+  --text-gray: #bababa;
+  --input: #696969;
+}
+/* --------------ROOT------------------- */
+
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +27,7 @@ header {
   position: fixed;
   width: 100%;
   height: 80px;
-  background-color: #1b1833;
+  background-color: var(--main);
   z-index: 100;
 }
 
@@ -21,9 +36,12 @@ header nav {
   justify-content: space-between;
   align-items: center;
 }
+header nav .menu {
+  display: none;
+}
 
 header nav .logo {
-  width: 10%;
+  width: 150px;
   margin-left: 1in;
 }
 
@@ -32,29 +50,35 @@ header nav ul {
 }
 
 header nav ul a {
-  color: #ab4459;
+  color: var(--link);
   font-size: larger;
   margin-right: 1.5in;
+  text-transform: uppercase;
   cursor: pointer;
 }
 
 header nav ul a:hover {
-  color: #f29f58;
+  color: var(--hover);
   transition: 0.3s;
 }
 
 header nav .register a {
-  color: #fff;
+  color: var(--text-color-white);
   font-size: larger;
-  margin-right: 30px;
+  margin-right: 40px;
+  text-transform: uppercase;
 }
 
 header nav .register .active {
-  color: #ab4459;
-  border: 1px solid #f29f58;
+  color: var(--text-color-white);
+  border: 1px solid var(--bg-white);
   padding: 10px 40px;
   border-radius: 25px;
-  background-color: #441752;
+  background-color: var(--color5);
+}
+header nav .register .active:hover {
+  background-color: var(--main);
+  transition: 0.5s;
 }
 
 .container {
@@ -63,12 +87,17 @@ header nav .register .active {
 
 /* ---------------BANNER--------------------- */
 .container .banner {
-  background: rgb(242, 159, 88);
-  background: linear-gradient(
-    90deg,
-    rgba(242, 159, 88, 1) 0%,
-    rgba(171, 68, 89, 1) 50%,
-    rgba(68, 23, 82, 1) 100%
+  background-image: linear-gradient(
+    to right,
+    #505285 0%,
+    #585e92 12%,
+    #65689f 25%,
+    #7474b0 37%,
+    #7e7ebb 50%,
+    #8389c7 62%,
+    #9795d4 75%,
+    #a2a1dc 87%,
+    #b5aee4 100%
   );
   display: flex;
   justify-content: space-between;
@@ -81,18 +110,18 @@ header nav .register .active {
 }
 
 .container .banner .left-banner h2 {
-  color: #441752;
+  color: var(--link);
   font-size: xx-large;
   margin: 5px 0px;
 }
 
 .container .banner .left-banner h1 {
-  color: white;
+  color: var(--text-color-white);
   font-size: 50px;
 }
 
 .container .banner .left-banner p {
-  color: rgb(186, 186, 186);
+  color: var(--text-gray);
   font-size: 18px;
   line-height: 35px;
 }
@@ -103,85 +132,27 @@ header nav .register .active {
 
 .container .banner .left-banner .link a {
   padding: 15px 25px;
-  border: 1px solid #ab4459;
+  color: var(--link);
+  border: 1px solid var(--hover);
   border-radius: 35px;
   font-weight: 700;
+  text-transform: uppercase;
+}
+.container .banner .left-banner .link a:hover {
+  color: var(--hover);
+  background-color: var(--main);
+  transition: 0.5s;
 }
 
 .container .banner .right-banner {
   width: 50%;
 }
 
-/* ---------------------CONTACT---------------------- */
-/* .contact .contact-header {}  */
-/* hooson tag*/
-
-.contact {
-  height: 2.5in;
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.contact .contact-header p {
-  padding: 20px 30px;
-  color: #441752;
-  font-size: 25px;
-  font-weight: 900;
-  text-align: center;
-}
-
-.contact .contact-img {
-  display: flex;
-  justify-content: space-center;
-  align-items: center;
-}
-
-.contact .contact-img h2 {
-  color: #1b1833;
-  font-size: 40px;
-  font-weight: 600;
-}
-
-.contact .contact-img h2 span {
-  color: blue;
-}
-
-.contact .contact-img img {
-  position: absolute;
-  right: 2in;
-  width: 150px;
-}
-
-/* ----------------MAPS------------------- */
-.maps {
-  height: 5in;
-  background-color: #ab4459;
-}
-
-.maps .maps-head {
-  text-align: center;
-  padding: 20px 0px;
-}
-
-.maps .maps-head h2 {
-  color: white;
-  font-size: 25px;
-  font-weight: 700;
-}
-
-.maps .maps-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 /* --------------VIEW--------------- */
 
 .view {
   height: 3in;
-  background-color: #441752;
+  background-color: var(--main);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -197,26 +168,26 @@ header nav .register .active {
 }
 .view .view-item h2 {
   font-size: 30px;
-  color: #fff;
+  color: var(--text-color-white);
   padding: 15px 0px;
 }
 .view .view-item p {
   font-size: 15px;
-  color: #fff;
+  color: var(--text-color-white);
 }
 
 /* -------------------CARD---------------- */
 
 .card {
   height: auto;
-  background-color: #f29f58;
+  background-color: var(--color5);
 }
 .card .card-title {
   padding: 25px;
   text-align: center;
 }
 .card .card-title h2 {
-  color: #fff;
+  color: var(--text-color-white);
   font-size: 40px;
   font-weight: 700;
 }
@@ -237,7 +208,7 @@ header nav .register .active {
   flex-basis: 25%;
 }
 .card .card-list .card-items.active {
-  border-top: 5px solid #1b1833;
+  border-top: 5px solid var(--color4);
 }
 .card .card-list .card-items img {
   width: 150px;
@@ -246,12 +217,12 @@ header nav .register .active {
   padding: 30px 80px;
 }
 .card .card-list .card-items .card-details h3 {
-  color: #1b1833;
+  color: var(--hover);
   font-size: 25px;
   font-weight: 900;
 }
 .card .card-list .card-items .card-details p {
-  color: #ffffff;
+  color: var(--text-color-white);
   font-size: 20px;
   font-weight: 700;
 }
@@ -265,7 +236,7 @@ header nav .register .active {
   margin: 30px;
 }
 .content .content-title h2 {
-  color: #441752;
+  color: var(--main);
   font-size: 30px;
   font-weight: 800;
 }
@@ -276,7 +247,7 @@ header nav .register .active {
   margin-bottom: 40px;
 }
 .content .content-info p {
-  color: #1b1833;
+  color: var(--color6);
   width: 50%;
   line-height: 30px;
   font-size: 20px;
@@ -291,7 +262,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #1b1833;
+  background-color: var(--main);
 }
 
 footer .footer-text {
@@ -299,7 +270,7 @@ footer .footer-text {
 }
 
 footer .footer-text p {
-  color: #ffffff;
+  color: var(--text-color-white);
   font-size: large;
   font-weight: 700;
 }

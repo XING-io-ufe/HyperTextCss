@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="./src/css/contact.css">
     <link rel="shortcut icon" href="./src/img/favicon.ico">
+    <link rel="stylesheet" href="./src/css/responsive.css">
 </head>
 
 <body>
@@ -16,28 +18,44 @@
             <div class="logo">
                 <a href="#"><img src="./src/img/logo.png" alt="" width="100%"></a>
             </div>
-            <ul>
-                <a href="#">
+            <ul id="nav-bar">
+                <a href="./">
                     <li>Home</li>
                 </a>
                 <a href="#">
-                    <li>About</li>
+                    <li>table</li>
                 </a>
-                <a href="#">
-                    <li>Pages</li>
+                <a href="./gallery.html">
+                    <li>gallery</li>
                 </a>
-                <a href="#">
+                <a href="./contact.html">
                     <li>Contact</li>
                 </a>
+                <div class="register mobile">
+                    <a href="./signup.html">SignUp</a>
+                    <a class="active" href="./signin.html">signin</a>
+                </div>
             </ul>
             <div class="register">
-                <a href="#">register</a>
-                <a class="active" href="#">login</a>
+                <a href="./signup.html">SignUp</a>
+                <a class="active" href="./signin.html">signin</a>
+            </div>
+            <div class="menu" id="menu-icon">
+                <i class="fa fa-solid fa-bars" style="color: #ffffff;"></i>
             </div>
         </nav>
     </header>
 
     <div class="container">
+        <div class="contact">
+            <div class="contact-header">
+                <p>Contact Us</p>
+                <div class="contact-img">
+                    <h2>Get In Touch With Us <span>Now</span></h2>
+                    <img src="./src/img/contact-dec-v3.png" width="100%" alt="">
+                </div>
+            </div>
+        </div>
         <div class="contact-form">
             <div class="contact-left">
                 <form method="POST" action="#" id="contact-fm">
@@ -71,15 +89,6 @@
                             <a href="">viemo</a>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="contact">
-            <div class="contact-header">
-                <p>Contact Us</p>
-                <div class="contact-img">
-                    <h2>Get In Touch With Us <span>Now</span></h2>
-                    <img src="./src/img/contact-dec-v3.png" width="100%" alt="">
                 </div>
             </div>
         </div>

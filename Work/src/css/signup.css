@@ -1,0 +1,128 @@
+:root {
+  --background: #293133;
+  --bg-color: #0e1f2f;
+  --red: #eb3941;
+  --border: #e7e7e7;
+  --text-color: #ffffffdb;
+  --border-focus: #a29bfe;
+  --btn: #ff2c2c;
+  --btn-hover: #ff0c21;
+  --text: #646464;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-up {
+  width: 500px;
+  padding: 40px 30px;
+}
+
+.texts {
+  color: var(--white);
+  text-align: center;
+  display: block;
+  text-transform: uppercase;
+}
+
+.sign-up .login-email .input-group {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 25px;
+}
+
+.sign-up .login-email .input-group input {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--border);
+  color: var(--text-color);
+  font-weight: bold;
+  padding: 15px 20px;
+  font-size: 1rem;
+  border-radius: 15px;
+  background: transparent;
+  outline: none;
+  transition: 0.3s;
+}
+.sign-up .login-email .input-group input::placeholder {
+  color: var(--text-color);
+}
+
+.sign-up .login-email .input-group input:focus,
+.sign-up .login-email .input-group input:valid {
+  border-color: var(--border-focus);
+}
+
+.sign-up .login-email .input-group .btn {
+  display: block;
+  width: 100%;
+  padding: 15px 20px;
+  text-align: center;
+  border: none;
+  background: var(--btn);
+  outline: none;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  color: var(--white);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sign-up .login-email .input-group .btn:hover {
+  background: var(--btn-hover);
+}
+
+.sign-up .login-email .input-group .form-control {
+  padding: 8px 10px;
+  border: none;
+  background: cadetblue;
+  border-radius: 5px;
+}
+
+.sign-up .login-email .input-group label {
+  color: white;
+  margin-right: 11px;
+  font-size: larger;
+}
+
+.back-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.back-link a.active {
+  text-decoration: none;
+  color: var(--white);
+  padding: 10px 40px;
+  background-color: var(--red);
+  border-radius: 15px;
+  cursor: pointer;
+}
+.login-register-text {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.login-register-text a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+@media (max-width: 430px) {
+  .sign-up {
+    width: 300px;
+  }
+}
