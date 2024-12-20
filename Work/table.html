@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,32 +11,35 @@
             font-family: Arial, sans-serif;
             background-color: #f8f9fa;
         }
-        
+
         h2 {
             margin-top: 20px;
             font-weight: bold;
         }
-        
-        table, th, td {
+
+        table,
+        th,
+        td {
             border: 1px solid blue;
             border-collapse: collapse;
         }
-        
+
         table {
             margin-top: 20px;
             width: 100%;
         }
-        
-        th, td {
+
+        th,
+        td {
             padding: 12px;
             text-align: center;
         }
-        
+
         th {
             background-color: #007bff;
             color: white;
         }
-        
+
         input {
             display: block;
             margin-bottom: 10px;
@@ -47,7 +51,7 @@
             border: 1px solid #007bff;
             border-radius: 5px;
         }
-        
+
         button {
             padding: 10px 20px;
             background-color: #007bff;
@@ -58,31 +62,31 @@
             cursor: pointer;
             transition: background-color 0.3s;
         }
-        
+
         button:hover {
             background-color: #0056b3;
         }
-        
+
         .delete-btn {
             color: red;
             font-weight: bold;
             cursor: pointer;
         }
-        
+
         .container {
             max-width: 900px;
             margin: 0 auto;
             padding: 20px;
             background-color: #ffffff;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        
+
         .scroll-btn {
             text-align: center;
             margin-bottom: 20px;
         }
-        
+
         .scroll-btn a {
             padding: 10px 20px;
             background-color: #ffc107;
@@ -91,30 +95,31 @@
             text-decoration: none;
             font-weight: bold;
         }
-        
+
         .scroll-btn a:hover {
             background-color: #e0a800;
         }
     </style>
 </head>
+
 <body>
 
     <!-- Scroll Button -->
     <div class="scroll-btn">
-        <a href="#userTableSection" class="btn btn-warning">Go to User Table</a>
+        <a href="./" class="btn btn-warning">Home page</a>
     </div>
 
     <!-- User Table Section -->
     <div id="userTableSection" class="container">
         <h2 class="text-center mb-4">User Registration Table</h2>
-        
+
         <div class="text-center">
             <input id="lastname" type="text" placeholder="Овог . . .">
             <input id="firstname" type="text" placeholder="Нэр . . .">
             <input id="age" type="number" placeholder="Нас . . .">
             <button id="register">Бүртгэх</button>
         </div>
-        
+
         <table id="userTable" class="table table-bordered">
             <thead>
                 <tr>
@@ -176,4 +181,5 @@
     </script>
 
 </body>
+
 </html>
