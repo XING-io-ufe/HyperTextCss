@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pick File</title>
+    <script>
+    async function readFileE () {
+      // (A) OPEN FILE PICKER
+      [handler] = await window.showOpenFilePicker({
+        excludeAcceptAllOption: true,
+        types: [{
+          description: "Text",
+          accept: { "text/plain": [".txt", ".text"] }
+        }]
+      });
+
+      // (B) GET SELECTED FILE
+      let selected = await handler.getFile();
+
+      // (C) READ SELECTED FILE
+      let reader = new FileReader();
+      reader.addEventListener("loadend", () => {
+        document.getElementById("demoShowE").innerHTML = reader.result;
+      });
+      reader.readAsText(selected);
+    }
+    </script>
+  </head>
+  <body>
+    <input type="button" value="Choose File" onclick="readFileE()">
+    <div id="demoShowE"></div>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Read File</title>
+    <script>
+    function readFileA () {
+      // (A) GET SELECTED FILE
+      let selected = document.getElementById("demoPickA").files[0];
+
+      // (B) READ SELECTED FILE
+      let reader = new FileReader();
+      reader.addEventListener("loadend", () => {
+        document.getElementById("demoShowA").innerHTML = reader.result;
+      });
+      reader.readAsText(selected);
+    }
+    </script>
+  </head>
+  <body>
+    <input type="file" value="Choose TXT File" id="demoPickA"
+           accept="text/plain" onchange="readFileA()">
+    <div id="demoShowA"></div>
+  </body>
+</html>

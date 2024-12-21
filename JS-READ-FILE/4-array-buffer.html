@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Read File</title>
+    <script>
+    function readFileD () {
+      // (A) GET SELECTED FILE
+      let selected = document.getElementById("demoPickD").files[0];
+
+      // (B) READ SELECTED FILE
+      let reader = new FileReader();
+      reader.addEventListener("load", () => {
+        var buffer = reader.result;
+        console.log(buffer);
+        console.log(buffer.byteLength);
+      });
+      reader.readAsArrayBuffer(selected);
+    }
+    </script>
+  </head>
+  <body>
+    <input type="file" value="Choose File" id="demoPickD"
+           onchange="readFileD()">
+  </body>
+</html>

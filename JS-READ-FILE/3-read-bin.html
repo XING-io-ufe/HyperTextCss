@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Read File</title>
+    <script>
+    function readFileC () {
+      // (A) GET SELECTED FILE
+      let selected = document.getElementById("demoPickC").files[0];
+
+      // (B) READ SELECTED FILE
+      let reader = new FileReader();
+      reader.addEventListener("load", () => {
+        var bindata = reader.result;
+        console.log(bindata);
+      });
+      reader.readAsBinaryString(selected);
+    }
+    </script>
+  </head>
+  <body>
+    <input type="file" value="Choose File" id="demoPickC"
+           onchange="readFileC()">
+  </body>
+</html>

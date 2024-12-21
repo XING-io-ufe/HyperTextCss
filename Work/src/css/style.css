@@ -224,9 +224,6 @@ header nav .register .active:hover {
   flex-basis: 25%;
 }
 
-.card .card-list .card-items.active {
-  border-top: 5px solid var(--color4);
-}
 
 .card .card-list .card-items img {
   width: 150px;

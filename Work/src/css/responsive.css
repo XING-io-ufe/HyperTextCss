@@ -5,7 +5,7 @@
     /* Increase header height for larger screens */
   }
 
-  x header nav .logo {
+  header nav .logo {
     width: 180px;
     /* Adjust logo size */
     margin-left: 2in;
